@@ -11,7 +11,7 @@
         <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     </head>
 
-    <body class="body">
+    <body class="container">
 
         <header class="page-header">
             <a class="page-header__logo" href="#">
@@ -22,7 +22,15 @@
                     <a class="main-nav__link" href="#country">О путешествии</a>
                     <a class="main-nav__link" href="#prices">Цены</a>
                 </div>
-                <a class="main-nav__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+                <a class="main-nav__phone" href="tel:+749978468446">
+                    <span class="main-nav__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.39635 8.62432C7.31179 7.42623 7.57753 6.24606 8.28114 5.29684C8.89115 4.43632 9.68536 3.96636 10.6426 3.69172C11.4489 3.4525 11.9774 3.74561 12.2099 4.64204C12.5421 5.98224 13.0162 7.3225 13.1884 8.73361C13.2427 9.35485 12.8411 10.2332 12.4062 10.6856C11.3161 11.7589 11.5426 12.5399 12.37 14.1643C12.6267 14.6881 13.0344 15.5934 13.8286 16.7919C14.656 17.9992 15.0939 18.6472 16.1569 18.0975C17.3376 17.5035 18.1983 17.8855 19.0891 18.8444C19.6931 19.5369 20.3574 20.1318 20.9614 20.8243C21.8341 21.8542 21.7949 22.5641 21.1124 23.2915C19.8833 24.6309 17.854 25.0736 16.3441 24.1766C15.5106 23.6881 14.6802 23.0487 14.0188 22.303C11.1047 18.9825 9.00291 15.1212 7.73759 10.7632C7.53526 10.0265 7.44165 9.28104 7.39635 8.62432Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                        </svg>
+                    </span>
+
+                    +7 (499) -784-684-46
+                </a>
             </nav>
         </header>
 
@@ -44,23 +52,28 @@
 
                 <ul class="places__list places-list">
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-greece.jpg" width="350" height="430" alt="Фото Греции">
+                        <img class="places-list__image" src="./img/foto-greece.jpg" width="350" height="430"
+                            alt="Фото Греции">
                         <a class="places-list__link" href="#greece" id="tab">Греция</a>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-albania.jpg" width="350" height="430" alt="Фото Албании">
+                        <img class="places-list__image" src="./img/foto-albania.jpg" width="350" height="430"
+                            alt="Фото Албании">
                         <a href="#albania">Албания</a>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-macedonia.jpg" width="350" height="430" alt="Фото Македонии">
+                        <img class="places-list__image" src="./img/foto-macedonia.jpg" width="350" height="430"
+                            alt="Фото Македонии">
                         <a href="#macedonia">Македония</a>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-montenegro.jpg" width="350" height="430" alt="Фото Черногории">
+                        <img class="places-list__image" src="./img/foto-montenegro.jpg" width="350" height="430"
+                            alt="Фото Черногории">
                         <a href="#montenegro">Черногория</a>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-croatia.jpg" width="350" height="430" alt="Фото Хорватии">
+                        <img class="places-list__image" src="./img/foto-croatia.jpg" width="350" height="430"
+                            alt="Фото Хорватии">
                         <a href="#croatia">Хорватия</a>
                     </li>
                 </ul>
@@ -188,8 +201,10 @@
                                 <h4 class="country-review__title">Отзывы</h4>
                                 <blockquote class="country-review__blockquote blockquote">
                                     <p class="blockquote__description">
-                                        Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что
-                                        все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось,
+                                        Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то,
+                                        что
+                                        все это формировалось тысячелетиями, мега необычно. Первоначально даже не
+                                        верилось,
                                         но натур ни с чем не спутать по итогу :)
                                     </p>
                                     <cite class="blockquote__author">Владимир Мулицин</cite>
@@ -247,7 +262,8 @@
                     <p class="form__invite">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
                     <label class="form__label">
                         <span class="visually-hidden">+7 Введите оставшиеся 10 цифр номера</span>
-                        <input class="form__input" type="tel" name="number" placeholder="+7 Введите 10 цифр номера" required>
+                        <input class="form__input" type="tel" name="number" placeholder="+7 Введите 10 цифр номера"
+                            required>
                     </label>
                     <label class="form__label">
                         <span class="visually-hidden">Введите адрес электронной почты</span>
@@ -315,7 +331,7 @@
                 <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
                 <a class="contacts__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
             </div>
-            
+
             <div class="page-footer__offer offer">
                 <p class="offer__title">Корпоративные путешествия</p>
                 <p class="offer__description">

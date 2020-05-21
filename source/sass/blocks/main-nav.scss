@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    margin-right: 40px;
+    color: #141517;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+      color: #fe8978;
+    }
+  }
+
+  &__phone {
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+    color: #fe8978;
+    font-size: 18px;
+  }
+
+  &__icon {
+    max-height: 30px;
+  }
+}

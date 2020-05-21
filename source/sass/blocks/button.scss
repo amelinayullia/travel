@@ -1,0 +1,20 @@
+.button {
+    font-family: "Montserrat", "Arial", sans-serif;
+    display: inline-block;
+    padding: 30px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fe7865;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #f17d4b;;
+    }
+  }
