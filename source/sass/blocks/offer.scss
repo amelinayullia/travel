@@ -1,0 +1,19 @@
+.offer {
+  padding: 10px;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #141517;
+    line-height: 1.8;
+  }
+
+  &__description {
+      margin: 0;
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: rgba(20, 21, 23, 0.5);
+  }
+}
