@@ -1,0 +1,20 @@
+.features {
+  &__item {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 7px;
+      border-left: 2px solid #fe7865;
+      border-bottom: 2px solid #fe7865;
+      top: 8px;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
