@@ -1,0 +1,54 @@
+.price {
+  &:hover {
+    box-shadow: 0 0 0 3px #fe7865;
+
+    .price__title {
+      color: #fe7865;
+      opacity: 1;
+    }
+
+    .price__description {
+      border-bottom: 1px solid #fe7865;
+    }
+
+    .price__features {
+      .features {
+        &__item {
+          &::before {
+            border-color: #141517;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    opacity: 0.7;
+    margin: 0;
+    min-width: 310px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__cost {
+    margin-left: auto;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 40px;
+    line-height: 1.5;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  }
+
+  &__features {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+  }
+}
