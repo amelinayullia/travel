@@ -1,0 +1,65 @@
+.places-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+    position: relative;
+
+    &:nth-of-type(4n) {
+      margin-left: 175px;
+    }
+
+    &:nth-of-type(5n) {
+      margin-right: 175px;
+    }
+
+    &:hover {
+      .places-list__link {
+        left: 80px;
+        z-index: 1;
+      }
+      .places-list__hover {
+        display: block;
+        background: rgba(20, 21, 23, 0.6);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__hover {
+    display: none;
+  }
+
+  &__hover-button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 30px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  &__link {
+    padding: 15px 52px;
+    position: relative;
+    top: -58px;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}
