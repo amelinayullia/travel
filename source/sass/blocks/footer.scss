@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 170px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+
+  &__next-travel {
+    max-width: 350px;
+  }
+
+  &__contacts {
+    max-width: 390px;
+  }
+
+  &__offer {
+    max-width: 340px;
+  }
+}
