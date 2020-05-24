@@ -9,7 +9,7 @@
     content: "";
     position: absolute;
     border-bottom: 1px solid rgba(44, 46, 63, 0.3);
-    top: 40px;
+    bottom: 0;
     left: 0;
     width: 920px;
   }
@@ -28,6 +28,15 @@
     &:hover {
       opacity: 1;
       color: #fe7865;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin-left: 30px;
+    overflow-x: scroll;
+
+    &::before {
+      width: 100%;
     }
   }
 }
