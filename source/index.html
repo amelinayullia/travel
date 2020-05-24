@@ -14,12 +14,21 @@
     <body>
         <header class="page-header container">
             <a class="page-header__logo" href="#">
-                <img class="page-header__image" src="./img/Logo.svg" width="60" height="22" alt="Логотип сайта Way">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+                    <img class="page-header__image" src="./img/Logo.svg" width="60" height="22" alt="Логотип сайта Way">
+                </picture>
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+
                 <div class="main-nav__wrapper">
-                    <a class="main-nav__link" href="#country">О путешествии</a>
-                    <a class="main-nav__link" href="#prices">Цены</a>
+                    <div class="main-nav__inner-link">
+                        <a class="main-nav__link" href="#country">О путешествии</a>
+                        <a class="main-nav__link" href="#prices">Цены</a>
+                    </div>
                 </div>
                 <a class="main-nav__phone" href="tel:+749978468446">
                     <span class="main-nav__icon">
@@ -56,45 +65,60 @@
 
                 <ul class="places__list places-list">
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-greece.jpg" width="350" height="430"
-                            alt="Фото Греции">
                         <a class="places-list__link" href="#greece">Греция</a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/photo-greece-tablet.jpg 1x, ./img/photo-greece-tablet2x.jpg 2x">
+                            <img class="places-list__image" src="./img/foto-greece.jpg 1x" srcset="./img/foto-greece2x.jpg 2x" width="350" 
+                            height="430" alt="Фото Греции">
+                        </picture>
 
                         <div class="places-list__hover">
                             <a class="places-list__hover-button" href="#greece">смотреть подробнее</a>
                         </div>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-albania.jpg" width="350" height="430"
-                            alt="Фото Албании">
                         <a class="places-list__link" href="#albania">Албания</a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/photo-albania-tablet.jpg 1x, ./img/photo-albania-tablet2x.jpg 2x">
+                            <img class="places-list__image" src="./img/foto-albania.jpg 1x" srcset="./img/foto-albania2x.jpg 2x" width="350" 
+                            height="430" alt="Фото Греции">
+                        </picture>
 
                         <div class="places-list__hover">
                             <a class="places-list__hover-button" href="#albania">смотреть подробнее</a>
                         </div>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-macedonia.jpg" width="350" height="430"
-                            alt="Фото Македонии">
                         <a class="places-list__link" href="#macedonia">Македония</a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/photo-macedonia-tablet.jpg 1x, ./img/photo-macedonia-tablet2x.jpg 2x">
+                            <img class="places-list__image" src="./img/foto-macedonia.jpg 1x" srcset="./img/foto-macedonia2x.jpg 2x" width="350" 
+                            height="430" alt="Фото Греции">
+                        </picture>
 
                         <div class="places-list__hover">
                             <a class="places-list__hover-button" href="#macedonia">смотреть подробнее</a>
                         </div>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-montenegro.jpg" width="350" height="430"
-                            alt="Фото Черногории">
                         <a class="places-list__link" href="#montenegro">Черногория</a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/photo-montenegro-tablet.jpg 1x, ./img/photo-montenegro-tablet2x.jpg 2x">
+                            <img class="places-list__image" src="./img/foto-montenegro.jpg 1x" srcset="./img/foto-montenegro2x.jpg 2x" width="350" 
+                            height="430" alt="Фото Греции">
+                        </picture>
 
                         <div class="places-list__hover">
                             <a class="places-list__hover-button" href="#montenegro">смотреть подробнее</a>
                         </div>
                     </li>
                     <li class="places-list__item">
-                        <img class="places-list__image" src="./img/foto-croatia.jpg" width="350" height="430"
-                            alt="Фото Хорватии">
                         <a class="places-list__link" href="#croatia">Хорватия</a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/photo-croatia-tablet.jpg 1x, ./img/photo-croatia-tablet2x.jpg 2x">
+                            <img class="places-list__image" src="./img/foto-croatia.jpg 1x" srcset="./img/foto-croatia2x.jpg 2x" width="350" 
+                            height="430" alt="Фото Греции">
+                        </picture>
 
                         <div class="places-list__hover">
                             <a class="places-list__hover-button" href="#croatia">смотреть подробнее</a>
@@ -181,10 +205,10 @@
                                 <p class="country-item__description">
                                     В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно
                                     красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы
-                                    заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино в
-                                    длину около 100 метров.
+                                    заберемся на вершину горы Татичев Камен где находится археологический памятник Кокино 
+                                    в длину около 100 метров.
                                 </p>
-                                <a class="country-item__link button" href="#">купить тур сейчас</a>    
+                                <a class="country-item__link button" href="#">купить тур сейчас</a>
                             </div>
 
                             <div class="country-item__review">
@@ -207,7 +231,7 @@
                                     местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом
                                     длина каньона составляет 80 км.
                                 </p>
-                                <a class="country-item__link button" href="#">купить тур сейчас</a>    
+                                <a class="country-item__link button" href="#">купить тур сейчас</a>
                             </div>
 
                             <div class="country-item__review">
@@ -227,10 +251,10 @@
                                 <p class="country-item__description">
                                     В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет
                                     вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными
-                                    нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и
-                                    тысячи лет.
+                                    нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися тысячи
+                                    и тысячи лет.
                                 </p>
-                                <a class="country-item__link button" href="#">купить тур сейчас</a>    
+                                <a class="country-item__link button" href="#">купить тур сейчас</a>
                             </div>
 
                             <div class="country-item__review">
@@ -308,13 +332,12 @@
                     <div class="form__inner-inputs">
                         <label class="form__label-phone">
                             <span class="visually-hidden">+7 Введите оставшиеся 10 цифр номера</span>
-                            <input class="form__input form__input--phone" type="tel" name="number" placeholder="+7 Введите 10 цифр номера" 
-                            required>
+                            <input class="form__input form__input--phone" type="tel" name="number" placeholder="+7 Введите 10 цифр номера" required>
                         </label>
                         <label class="form__label">
                             <span class="visually-hidden">Введите адрес электронной почты</span>
                             <input class="form__input" type="email" name="mail" placeholder="E-mail" required>
-                        </label>    
+                        </label>
                     </div>
                     <button class="form__button button" type="submit">Отправить</button>
                 </form>
@@ -391,6 +414,9 @@
                 </p>
             </div>
         </footer>
+
+        <script src="js/scripts.js"></script>
+
     </body>
 
 </html>
