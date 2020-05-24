@@ -17,4 +17,10 @@
       transform: rotate(-45deg);
     }
   }
+
+  @media (max-width: $bp-tablet) {
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
 }
