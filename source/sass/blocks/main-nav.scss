@@ -28,4 +28,123 @@
   &__phone-text {
     border-bottom: 1px solid #fe8978;
   }
+
+  &__toggle {
+    display: none;
+  }
+
+  @media (max-width: $bp-tablet) {
+    position: relative;
+    min-width: 72px;
+    min-height: 50px;
+    background-color: #fe8978;
+
+    &__toggle {
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 21px;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      background: 0 0;
+      border: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    &--opened::before,
+    &--opened::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 24px;
+      width: 22px;
+      height: 1px;
+      background-color: rgba(20, 21, 23, 0.2);
+    }
+
+    &--opened::before {
+      transform: rotate(45deg);
+    }
+
+    &--opened::after {
+      transform: rotate(-45deg);
+    }
+
+    &--opened .main-nav__inner-toggle {
+      background-color: transparent;
+    }
+
+    &--closed .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    }
+
+    &--closed .main-nav__wrapper {
+      display: none;
+    }
+
+    &--opened {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background-color: #ffffff;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+
+    &--nojs .main-nav__wrapper {
+      position: static;
+      min-height: 0;
+    }
+
+    &--nojs .main-nav__link {
+      display: block;
+    }
+
+    &__phone {
+      display: none;
+    }
+
+    &__inner-link {
+      display: flex;
+      flex-direction: column;
+      padding-top: 134px;
+      min-height: 570px;
+      min-width: 100vw;    }
+
+    &__link {
+      margin: 0;
+      margin-bottom: 30px;
+      padding: 17px;
+      background: #fbf8f8;
+      font-weight: 600;
+      font-size: 20px;
+      color: #48494d;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-top: 1px solid rgba(44, 46, 63, 0.5);
+        border-right: 1px solid rgba(44, 46, 63, 0.5);
+        width: 8px;
+        height: 8px;
+        top: 27px;
+        right: 20px;
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
