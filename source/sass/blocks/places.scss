@@ -15,11 +15,30 @@
     margin: 0;
     margin-top: 65px;
     line-height: 1.7;
+    letter-spacing: -0.46px;
+    color: rgba(44, 46, 63, 0.7);
   }
 
   &__list {
     margin: 0;
-    margin-top: 55px;
     padding: 0;
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin-top: 80px;
+
+    &__inner {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 1.5;
+    }
+
+    &__description {
+      margin-top: 20px;
+    }
   }
 }
