@@ -29,6 +29,7 @@
     margin-top: 30px;
     opacity: 0.7;
     line-height: 1.6;
+    letter-spacing: -0.46px;
   }
 
   &__link {
@@ -55,7 +56,7 @@
       position: absolute;
       border: 1px solid #fe7865;
       width: 68px;
-      top: 48px;
+      top: 47px;
       left: 0;
     }
   }
@@ -71,6 +72,7 @@
     font-size: 14px;
     opacity: 0.7;
     line-height: 1.9;
+    letter-spacing: -0.40px;
   }
 
   &__blockquote-author {
@@ -91,6 +93,41 @@
       height: 38px;
       top: 0;
       left: 0;
+    }
+  }
+  
+  @media (max-width: $bp-tablet) {
+    &__about {
+      max-width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 30px;
+      padding: 0;
+
+      &::before {
+        border: 0;
+      }
+    }
+
+    &__description {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__link {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 20px 52px;
+      font-weight: 500;
+      font-size: 10px;
+    }
+
+    &__review {
+      margin-top: 85px;
     }
   }
 }
