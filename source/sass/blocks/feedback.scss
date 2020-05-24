@@ -10,6 +10,7 @@
     content: "";
     position: absolute;
     background-image: url("../../img/foto-sunset.jpg");
+    background-repeat: no-repeat;
     background-color: #fe7865;
     width: 845px;
     height: 455px;
@@ -22,5 +23,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin-top: 125px;
+    justify-content: center;
+
+    &::before {
+      background-image: url("../../img/photo-sunset-tablet.jpg");
+      width: 768px;
+    }
   }
 }
