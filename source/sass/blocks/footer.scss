@@ -15,4 +15,25 @@
   &__offer {
     max-width: 340px;
   }
+
+  @media (max-width: $bp-tablet) {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: stretch;
+
+    &__next-travel {
+      max-width: 400px;
+    }
+
+    &__contacts {
+      max-width: 330px;
+    }
+
+    &__offer {
+      max-width: 100%;
+    }  
+  }
 }
