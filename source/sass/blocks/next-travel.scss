@@ -27,4 +27,10 @@
   &__link {
     cursor: pointer;
   }
+  
+  @media (max-width: $bp-tablet) {
+    &__list {
+      padding-right: 50px;
+    }
+  }
 }
