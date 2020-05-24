@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 42px;
     position: relative;
 
     &:nth-of-type(4n) {
@@ -28,7 +27,7 @@
         display: block;
         background: rgba(20, 21, 23, 0.6);
         position: absolute;
-        top: 0;
+        top: 50px;
         width: 100%;
         height: 430px;
         display: flex;
@@ -56,10 +55,56 @@
 
   &__link {
     padding: 15px 52px;
+    padding-bottom: 3px;
     position: relative;
-    top: -58px;
+    top: 438px;
     background-color: #ffffff;
     font-weight: 500;
     font-size: 24px;
+    letter-spacing: -0.415px;
+  }
+
+  &__image {
+    max-width: 350px;
+    height: 430px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    justify-content: center;
+
+    &__item {
+      margin-right: 15px;
+      margin-left: 15px;
+
+      &:nth-of-type(4n) {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      &:nth-of-type(5n) {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      &:hover {
+        .places-list__link {
+          left: 50px;
+        }
+
+        .places-list__hover {
+          top: 50px;
+          height: 424px;
+        }
+      }
+    }
+
+    &__link {
+      top: 425px;
+    }
+
+    &__image {
+      max-width: 288px;
+      height: 425px;
+    }
   }
 }
