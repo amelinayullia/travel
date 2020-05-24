@@ -7,6 +7,7 @@
     position: absolute;
     background-image: url(../../img/photo-greece.jpg);
     background-repeat: no-repeat;
+    background-color: #7e99c2;
     top: -15px;
     left: 470px;
     width: 430px;
@@ -23,9 +24,27 @@
     display: none;
 
     &--active {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin-top: 30px;
+
+    &::before {
+      background-image: url(../../img/photo-bc-greece-tablet.jpg);
+      top: 320px;
+      left: 0;
+      width: 768px;
+      height: 415px;
+    }
+
+    &__item {
+      &--active {
+        flex-direction: column;
+      }
     }
   }
 }
