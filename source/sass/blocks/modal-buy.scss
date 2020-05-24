@@ -1,0 +1,27 @@
+.modal-buy {
+  max-width: 728px;
+  min-height: 444px;
+  background: #fbf8f8;
+  position: relative;
+  display: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/photo-modal.jpg);
+    width: 338px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 390px;
+    min-height: 444px;
+    margin-left: auto;
+  }
+}
