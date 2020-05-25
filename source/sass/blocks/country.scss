@@ -35,9 +35,10 @@
 
     &::before {
       background-image: url(../../img/photo-bc-greece-tablet.jpg);
+      background-size: cover;
       top: 320px;
       left: 0;
-      width: 768px;
+      width: 100%;
       height: 415px;
     }
 
@@ -45,6 +46,15 @@
       &--active {
         flex-direction: column;
       }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 24px;
+
+    &::before {
+      background-image: url(../../img/photo-bc-greece-mobile.jpg);
+      top: 537px;
     }
   }
 }
