@@ -37,7 +37,7 @@
     position: relative;
     min-width: 72px;
     min-height: 50px;
-    background-color: #fe8978;
+    background-color: #fe7865;
 
     &__toggle {
       display: block;
@@ -46,11 +46,9 @@
       right: 21px;
       width: 30px;
       height: 30px;
-      margin: 0;
       padding: 0;
       background: 0 0;
       border: 0;
-      z-index: 2;
       cursor: pointer;
     }
 
@@ -91,6 +89,7 @@
     &--closed .main-nav__wrapper {
       display: none;
     }
+
 
     &--opened {
       position: absolute;
@@ -145,6 +144,19 @@
         right: 20px;
         transform: rotate(45deg);
       }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    min-width: 50px;
+
+    &__toggle {
+      right: 10px;
+    }
+
+    &--opened::before,
+    &--opened::after {
+      right: 14px;
     }
   }
 }
