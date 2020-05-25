@@ -19,8 +19,8 @@
     }
 
     &:hover {
+      align-items: flex-end;
       .places-list__link {
-        left: 80px;
         z-index: 1;
       }
       .places-list__hover {
@@ -54,7 +54,7 @@
   }
 
   &__link {
-    padding: 15px 52px;
+    padding: 15px;
     padding-bottom: 3px;
     position: relative;
     top: 438px;
@@ -62,6 +62,8 @@
     font-weight: 500;
     font-size: 24px;
     letter-spacing: -0.415px;
+    min-width: 215px;
+    text-align: center;
   }
 
   &__image {
@@ -87,10 +89,6 @@
       }
 
       &:hover {
-        .places-list__link {
-          left: 50px;
-        }
-
         .places-list__hover {
           top: 50px;
           height: 424px;
@@ -105,6 +103,12 @@
     &__image {
       max-width: 288px;
       height: 425px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    &__item {
+      margin: 0;
     }
   }
 }
