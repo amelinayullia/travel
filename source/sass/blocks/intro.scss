@@ -94,15 +94,44 @@
 
       &::before {
         border: 1px solid #ffffff;
-        right: 37px;
+        right: 38px;
       }
-  
+
       &::after {
-        right: 32px;
+        right: 33px;
         top: 21px;
         border-right: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
       }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    min-height: 435px;
+
+    &::before {
+      background-image: url("../../img/photo-main-mobile.jpg");
+      height: 235px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    &__inner {
+      max-width: 290px;
+      margin-top: 85px;
+    }
+
+    &__description {
+      margin-top: 100px;
+      color: #2c2e3f;
+    }
+
+    &__link {
+      margin-top: 20px;
+      padding-right: 145px;
     }
   }
 }
