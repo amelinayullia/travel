@@ -41,4 +41,16 @@
       margin-top: 20px;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 108px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__inner {
+      max-width: 288px;
+    }
+  }
 }
