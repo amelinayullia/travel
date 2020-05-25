@@ -8,7 +8,6 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     justify-content: space-between;
@@ -31,6 +30,27 @@
   @media (max-width: $bp-tablet) {
     &__list {
       padding-right: 50px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      padding: 0;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      text-align: center;
+    }
+
+    &__list-inner {
+      flex-grow: 1;
+      margin-right: 20px;
     }
   }
 }
