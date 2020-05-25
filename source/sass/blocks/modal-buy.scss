@@ -1,9 +1,17 @@
 .modal-buy {
-  max-width: 728px;
+  min-width: 728px;
   min-height: 444px;
   background-color: #fbf8f8;
   position: relative;
   display: none;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  z-index: 1;
+
+  &--is-open {
+    display: flex;
+  }
 
   &::before {
     content: "";

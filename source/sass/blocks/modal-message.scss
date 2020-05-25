@@ -1,12 +1,19 @@
 .modal-message {
-  max-width: 728px;
-  min-height: 445px;
+  width: 100vw;
+  height: 100vh;
   background-color: #fbf8f8;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  &--is-open {
+    display: flex;
+  }
 
   &__text {
     max-width: 400px;
