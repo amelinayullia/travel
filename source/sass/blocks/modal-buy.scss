@@ -33,14 +33,20 @@
     margin-left: auto;
   }
 
+  @media (max-width: $bp-tablet) {
+    left: 2%;
+  }
+
   @media (max-width: $bp-mobile) {
-    max-width: 320px;
-    min-height: 568px;
+    min-width: 320px;
+    height: 568px;
     background-color: #ffffff;
     border: 1px solid #d7d9df;
+    top: 10%;
+    left: 0;
 
     &::before {
-      background: none;
+      content: none;
     }
   }
 }
