@@ -67,9 +67,11 @@
                     <li class="places-list__item">
                         <a class="places-list__link" href="#greece">Греция</a>
                         <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./img/photo-greece-mobile.jpg 1x, ./img/photo-greece-mobile2x.jpg 2x">
                             <source media="(min-width: 768px)"
                                 srcset="./img/photo-greece-tablet.jpg 1x, ./img/photo-greece-tablet2x.jpg 2x">
-                            <img class="places-list__image" src="./img/photo-greece.jpg 1x"
+                            <img class="places-list__image" src="./img/photo-greece.jpg1x"
                                 srcset="./img/photo-greece2x.jpg 2x" width="350" height="430" alt="Фото Греции">
                         </picture>
 
@@ -80,9 +82,11 @@
                     <li class="places-list__item">
                         <a class="places-list__link" href="#albania">Албания</a>
                         <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./img/photo-albania-mobile.jpg 1x, ./img/photo-albania-mobile2x.jpg 2x">
                             <source media="(min-width: 768px)"
                                 srcset="./img/photo-albania-tablet.jpg 1x, ./img/photo-albania-tablet2x.jpg 2x">
-                            <img class="places-list__image" src="./img/photo-albania.jpg 1x"
+                            <img class="places-list__image" src="./img/photo-albania.jpg1x"
                                 srcset="./img/photo-albania2x.jpg 2x" width="350" height="430" alt="Фото Греции">
                         </picture>
 
@@ -93,9 +97,11 @@
                     <li class="places-list__item">
                         <a class="places-list__link" href="#macedonia">Македония</a>
                         <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./img/photo-macedonia-mobile.jpg 1x, ./img/photo-macedonia-mobile2x.jpg 2x">
                             <source media="(min-width: 768px)"
                                 srcset="./img/photo-macedonia-tablet.jpg 1x, ./img/photo-macedonia-tablet2x.jpg 2x">
-                            <img class="places-list__image" src="./img/photo-macedonia.jpg 1x"
+                            <img class="places-list__image" src="./img/photo-macedonia.jpg1x"
                                 srcset="./img/photo-macedonia2x.jpg 2x" width="350" height="430" alt="Фото Греции">
                         </picture>
 
@@ -106,9 +112,11 @@
                     <li class="places-list__item">
                         <a class="places-list__link" href="#montenegro">Черногория</a>
                         <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./img/photo-montenegro-mobile.jpg 1x, ./img/photo-montenegro-mobile2x.jpg 2x">
                             <source media="(min-width: 768px)"
                                 srcset="./img/photo-montenegro-tablet.jpg 1x, ./img/photo-montenegro-tablet2x.jpg 2x">
-                            <img class="places-list__image" src="./img/photo-montenegro.jpg 1x"
+                            <img class="places-list__image" src="./img/photo-montenegro.jpg1x"
                                 srcset="./img/photo-montenegro2x.jpg 2x" width="350" height="430" alt="Фото Греции">
                         </picture>
 
@@ -119,9 +127,11 @@
                     <li class="places-list__item">
                         <a class="places-list__link" href="#croatia">Хорватия</a>
                         <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./img/photo-croatia-mobile.jpg 1x, ./img/photo-croatia-mobile2x.jpg 2x">
                             <source media="(min-width: 768px)"
                                 srcset="./img/photo-croatia-tablet.jpg 1x, ./img/photo-croatia-tablet2x.jpg 2x">
-                            <img class="places-list__image" src="./img/photo-croatia.jpg 1x"
+                            <img class="places-list__image" src="./img/photo-croatia.jpg1x"
                                 srcset="./img/photo-croatia2x.jpg 2x" width="350" height="430" alt="Фото Греции">
                         </picture>
 
@@ -176,7 +186,10 @@
                                         скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение
                                         такое, как будто стоишь на краю света!
                                     </p>
-                                    <cite class="country-item__blockquote-author">Влада Голицина</cite>
+                                    <div class="country-item__blockquote-inner">
+                                        <img src="./img/photo-avatar-greece.png" width="38" height="38" alt="Аватарка автора">
+                                        <cite class="country-item__blockquote-author">Влада Голицина</cite>    
+                                    </div>
                                 </blockquote>
                             </div>
                         </li>
@@ -200,7 +213,10 @@
                                         Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой
                                         сестру, чтобы тоже смогла вкусить все красоты природы :)
                                     </p>
-                                    <cite class="country-item__blockquote-author">Маришка</cite>
+                                    <div class="country-item__blockquote-inner">
+                                        <img src="./img/photo-avatar-albania.png" width="38" height="38" alt="Аватарка автора">
+                                        <cite class="country-item__blockquote-author">Маришка</cite>    
+                                    </div>
                                 </blockquote>
                             </div>
                         </li>
@@ -225,7 +241,10 @@
                                         гору был очень веселым так как люди оказались легкими и заводными. Красота
                                         природы впечатлила, особенно после долгого пути в гору.
                                     </p>
-                                    <cite class="country-item__blockquote-author">Михаил Кузьмин</cite>
+                                    <div class="country-item__blockquote-inner">
+                                        <img src="./img/photo-avatar-macedonia.png" width="38" height="38" alt="Аватарка автора">
+                                        <cite class="country-item__blockquote-author">Михаил Кузьмин</cite>    
+                                    </div>
                                 </blockquote>
                             </div>
                         </li>
@@ -247,7 +266,10 @@
                                         Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
                                         фильмах :) Всем советую
                                     </p>
-                                    <cite class="country-item__blockquote-author">Анастасия Мей</cite>
+                                    <div class="country-item__blockquote-inner">
+                                        <img src="./img/photo-avatar-montenegro.png" width="38" height="38" alt="Аватарка автора">
+                                        <cite class="country-item__blockquote-author">Анастасия Мей</cite>    
+                                    </div>
                                 </blockquote>
                             </div>
                         </li>
@@ -274,7 +296,10 @@
                                         верилось,
                                         но натур ни с чем не спутать по итогу :)
                                     </p>
-                                    <cite class="country-item__blockquote-author">Владимир Мулицин</cite>
+                                    <div class="country-item__blockquote-inner">
+                                        <img src="./img/photo-avatar-croatia.png" width="38" height="38" alt="Аватарка автора">
+                                        <cite class="country-item__blockquote-author">Владимир Мулицин</cite>    
+                                    </div>
                                 </blockquote>
                             </div>
                         </li>
@@ -343,7 +368,7 @@
                     <div class="form__inner-inputs">
                         <label class="form__label-phone">
                             <span class="visually-hidden">+7 Введите оставшиеся 10 цифр номера</span>
-                            <input class="form__input form__input--phone" type="tel" name="number"
+                            <input class="form__input form__input--phone" type="tel" name="phone"
                                 placeholder="+7 Введите 10 цифр номера" required>
                         </label>
                         <label class="form__label">
@@ -360,51 +385,57 @@
             <section class="footer__next-travel next-travel">
                 <p class="next-travel__title">Следующие путешествия</p>
                 <ul class="next-travel__list">
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Марсель</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Сардиния</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Корс</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Ним</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Палермо</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Ницца</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Монпелье</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Катания</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Монако</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Барселона</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Неаполь</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Динь-ле-Бен</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Пальма</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Рим</a>
-                    </li>
-                    <li class="next-travel__item">
-                        <a class="next-travel__link" href="#">Гренобль</a>
-                    </li>
+                    <div class="next-travel__list-inner">
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Марсель</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Ним</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Монпелье</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Барселона</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Пальма</a>
+                        </li>    
+                    </div>
+                    <div class="next-travel__list-inner">
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Сардиния</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Палермо</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Катания</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Неаполь</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Рим</a>
+                        </li>    
+                    </div>
+                    <div class="next-travel__list-inner">
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Корс</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Ницца</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Монако</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Динь-ле-Бен</a>
+                        </li>
+                        <li class="next-travel__item">
+                            <a class="next-travel__link" href="#">Гренобль</a>
+                        </li>    
+                    </div>
                 </ul>
             </section>
 
@@ -422,7 +453,7 @@
                 <p class="offer__title">Корпоративные путешествия</p>
                 <p class="offer__description">
                     Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают
-                    компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+                    компанию, помогают поддерживать корпоративный дух, а также являются оличным время препровождением
                 </p>
             </div>
         </footer>
@@ -432,7 +463,7 @@
                 <h2 class="modal-form__title">Купить тур </h2>
                 <label class="modal-form__label-phone">
                     <span class="visually-hidden">+7 Введите оставшиеся 10 цифр номера</span>
-                    <input class="modal-form__input modal-form__input--phone" type="tel" name="number"
+                    <input class="modal-form__input modal-form__input--phone" type="tel" name="phone"
                     placeholder="+7 Введите 10 цифр номера" required/>
                 </label>
                 <label class="modal-form__label">
