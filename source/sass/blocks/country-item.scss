@@ -72,30 +72,20 @@
     font-size: 14px;
     opacity: 0.7;
     line-height: 1.9;
-    letter-spacing: -0.40px;
+    letter-spacing: -0.4px;
+  }
+
+  &__blockquote-inner {
+    display: flex;
+    align-items: center;
   }
 
   &__blockquote-author {
-    padding-left: 55px;
+    padding-left: 15px;
     font-weight: 500;
     font-style: inherit;
-    display: block;
-    min-height: 38px;
-    padding-top: 10px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/photo-avatar-greece.png");
-      background-repeat: no-repeat;
-      width: 38px;
-      height: 38px;
-      top: 0;
-      left: 0;
-    }
   }
-  
+
   @media (max-width: $bp-tablet) {
     &__about {
       max-width: 100%;
@@ -128,6 +118,50 @@
 
     &__review {
       margin-top: 85px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    max-width: 320px;
+    margin: 0 auto;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__link {
+      margin-bottom: 50px;
+      padding: 20px 66px;
+    }
+
+    &__review {
+      margin-top: 50px;
+      max-width: 268px;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    &__review-title {
+      font-size: 20px;
+
+      &::before {
+        top: 34px;
+        left: 80px;
+      }
+    }
+
+    &__blockquote-description {
+      margin-bottom: 20px;
+    }
+
+    &__blockquote-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__blockquote-author {
+      margin-top: 10px;
     }
   }
 }
