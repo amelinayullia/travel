@@ -1,7 +1,7 @@
 .modal-buy {
   max-width: 728px;
   min-height: 444px;
-  background: #fbf8f8;
+  background-color: #fbf8f8;
   position: relative;
   display: none;
 
@@ -23,5 +23,16 @@
     max-width: 390px;
     min-height: 444px;
     margin-left: auto;
+  }
+
+  @media (max-width: $bp-mobile) {
+    max-width: 320px;
+    min-height: 568px;
+    background-color: #ffffff;
+    border: 1px solid #d7d9df;
+
+    &::before {
+      background: none;
+    }
   }
 }
