@@ -93,4 +93,20 @@
       display: none;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    max-width: 288px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__description {
+      padding: 0;
+    }
+
+    &__invite {
+      margin-top: 20px;
+    }
+  }
 }
