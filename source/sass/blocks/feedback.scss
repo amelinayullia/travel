@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-color: #fe7865;
     width: 845px;
-    height: 455px;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
@@ -32,6 +32,15 @@
     &::before {
       background-image: url("../../img/photo-sunset-tablet.jpg");
       width: 768px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 20px;
+    padding: 0;
+
+    &::before {
+      content: none;
     }
   }
 }
