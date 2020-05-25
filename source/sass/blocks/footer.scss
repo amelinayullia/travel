@@ -36,4 +36,12 @@
       max-width: 100%;
     }  
   }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
 }
