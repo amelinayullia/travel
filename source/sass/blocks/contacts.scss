@@ -64,4 +64,14 @@
     padding-left: 50px;
     border-right: none;
   }
+
+  @media (max-width: $bp-mobile) {
+    padding: 0;
+    align-items: center;
+    padding-top: 30px;
+    border-left: none;
+    min-width: 288px;
+    border-top: 1px solid #d7d9df;
+    border-bottom: 1px solid #d7d9df;
+  }
 }
