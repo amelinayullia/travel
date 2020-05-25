@@ -39,4 +39,8 @@
       width: 100%;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    margin-left: 15px;
+  }
 }
