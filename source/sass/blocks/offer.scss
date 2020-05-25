@@ -28,4 +28,9 @@
       line-height: 1.8;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 5px;
+    border-top: none;
+  }
 }
