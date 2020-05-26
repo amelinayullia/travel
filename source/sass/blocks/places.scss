@@ -1,5 +1,5 @@
 .places {
-  margin-top: 200px;
+  margin-top: 203px;
 
   &__inner {
     max-width: 345px;
@@ -9,11 +9,13 @@
     font-weight: 600;
     font-size: 55px;
     margin: 0;
+    letter-spacing: -1.245px;
+    line-height: 1.4;
   }
 
   &__description {
     margin: 0;
-    margin-top: 65px;
+    margin-top: 66px;
     line-height: 1.7;
     letter-spacing: -0.46px;
     color: rgba(44, 46, 63, 0.7);

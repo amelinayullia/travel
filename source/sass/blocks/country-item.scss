@@ -2,7 +2,7 @@
   &__about {
     display: flex;
     flex-direction: column;
-    max-width: 386px;
+    max-width: 376px;
     align-items: baseline;
   }
 
@@ -26,9 +26,9 @@
 
   &__description {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 32px;
     opacity: 0.7;
-    line-height: 1.6;
+    line-height: 1.75;
     letter-spacing: -0.46px;
   }
 
@@ -41,6 +41,7 @@
     max-width: 382px;
     background-color: #ffffff;
     padding: 30px;
+    padding-top: 20px;
     z-index: 1;
   }
 
@@ -50,28 +51,30 @@
     font-size: 30px;
     padding-bottom: 10px;
     position: relative;
+    letter-spacing: -0.69px;
 
     &::before {
       content: "";
       position: absolute;
       border: 1px solid #fe7865;
       width: 68px;
-      top: 47px;
+      top: 53px;
       left: 0;
     }
   }
 
   &__blockquote {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 28px;
+    letter-spacing: -0.40px;
   }
 
   &__blockquote-description {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-size: 14px;
     opacity: 0.7;
-    line-height: 1.9;
+    line-height: 2;
     letter-spacing: -0.4px;
   }
 
@@ -84,6 +87,7 @@
     padding-left: 15px;
     font-weight: 500;
     font-style: inherit;
+    letter-spacing: -0.46px;
   }
 
   @media (max-width: $bp-tablet) {

@@ -1,6 +1,7 @@
 .country {
-  margin-top: 95px;
+  margin-top: 93px;
   position: relative;
+  letter-spacing: -1.245px;
 
   &::before {
     content: "";
@@ -34,7 +35,7 @@
     margin-top: 30px;
 
     &::before {
-      background-image: url(../../img/photo-bc-greece-tablet.jpg);
+      background-image: url(../../img/photo-bc-greece-tablet.png);
       background-size: cover;
       top: 320px;
       left: 0;
@@ -53,7 +54,7 @@
     margin-top: 24px;
 
     &::before {
-      background-image: url(../../img/photo-bc-greece-mobile.jpg);
+      background-image: url(../../img/photo-bc-greece-mobile.png);
       top: 537px;
     }
   }

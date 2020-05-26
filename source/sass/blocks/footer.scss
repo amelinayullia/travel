@@ -5,11 +5,12 @@
   justify-content: space-between;
 
   &__next-travel {
-    max-width: 350px;
+    min-width: 375px;
+    padding-left: 13px;
   }
 
   &__contacts {
-    max-width: 390px;
+    min-width: 390px;
   }
 
   &__offer {

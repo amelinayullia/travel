@@ -5,6 +5,7 @@
   border-right: 1px solid #d7d9df;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 
   &__title {
     margin: 0;
@@ -12,7 +13,7 @@
     font-size: 18px;
     color: #141517;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &__link-text {
@@ -21,7 +22,7 @@
 
   &__link {
     color: #fe7865;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left: 40px;
     display: flex;
     align-items: center;
