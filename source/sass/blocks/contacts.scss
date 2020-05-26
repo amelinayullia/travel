@@ -76,5 +76,17 @@
     min-width: 288px;
     border-top: 1px solid #d7d9df;
     border-bottom: 1px solid #d7d9df;
+
+    &__title {
+      padding-right: 10px;
+    }
+
+    &__link {
+
+      &--phone {
+        padding-right: 10px;
+        margin-bottom: 17px;
+      }
+    }
   }
 }

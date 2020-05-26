@@ -80,7 +80,13 @@
     }
   }
 
+  @media (max-width: $bp-tablet) {
+    margin-left: auto;
+  }
+
   @media (max-width: $bp-mobile) {
+    margin: 0 auto;
+
     &__input {
       min-width: 288px;
     }

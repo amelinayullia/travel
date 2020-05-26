@@ -16,7 +16,7 @@
     width: 845px;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 27px;
     z-index: -1;
   }
 
@@ -33,11 +33,12 @@
     &::before {
       background-image: url("../../img/photo-sunset-tablet.jpg");
       width: 768px;
+      left: 0;
     }
   }
 
   @media (max-width: $bp-mobile) {
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 0;
 
     &::before {

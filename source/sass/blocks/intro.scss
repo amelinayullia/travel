@@ -57,7 +57,7 @@
       position: absolute;
       width: 12px;
       height: 12px;
-      right: 42px;
+      right: 41px;
       top: 32px;
       border-right: 2px solid #ffffff;
       border-bottom: 2px solid #ffffff;
@@ -127,12 +127,13 @@
 
     &__inner {
       max-width: 290px;
-      margin-top: 85px;
+      margin-top: 82px;
     }
 
     &__description {
-      margin-top: 100px;
+      margin-top: 102px;
       color: #2c2e3f;
+      line-height: 1.65;
     }
 
     &__link {

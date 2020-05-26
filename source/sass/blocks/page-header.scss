@@ -16,4 +16,11 @@
       padding-top: 19px;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    &__logo {
+      padding-left: 15px;
+      padding-top: 17px;
+    }  
+  }
 }
