@@ -32,12 +32,13 @@
   }
 
   @media (max-width: $bp-tablet) {
-    margin-top: 30px;
+    margin-top: 33px;
+    letter-spacing: 0;
 
     &::before {
       background-image: url(../../img/photo-bc-greece-tablet.png);
       background-size: cover;
-      top: 320px;
+      top: 332px;
       left: 0;
       width: 100%;
       height: 415px;

@@ -80,12 +80,12 @@
     &--closed .main-nav__toggle::before {
       content: "";
       position: absolute;
-      top: 5px;
-      right: 0;
-      width: 30px;
+      top: 4px;
+      right: 3px;
+      width: 23px;
       height: 1px;
       background-color: #ffffff;
-      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+      box-shadow: 0 7px 0 0 #ffffff, 0 13px 0 0 #ffffff;
     }
 
     &--closed .main-nav__wrapper {

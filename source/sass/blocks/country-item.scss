@@ -107,6 +107,10 @@
       }
     }
 
+    &__blockquote {
+      margin-top: 20px;
+    }
+
     &__description {
       margin-top: 20px;
       text-align: center;
@@ -121,7 +125,14 @@
     }
 
     &__review {
-      margin-top: 85px;
+      margin-top: 79px;
+      padding-top: 30px;
+    }
+
+    &__review-title {
+      &::before {
+        top: 47px;
+      }
     }
   }
 

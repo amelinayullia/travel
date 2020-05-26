@@ -21,6 +21,10 @@
   @media (max-width: $bp-tablet) {
     &__item {
       margin-bottom: 10px;
+
+      &::before {
+        top: 12px;
+      }
     }
   }
 }

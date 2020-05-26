@@ -62,8 +62,10 @@
 
   @media (max-width: $bp-tablet) {
     padding: 0;
-    padding-left: 50px;
+    padding-left: 49px;
     border-right: none;
+    margin: 0;
+    padding-top: 3px;
   }
 
   @media (max-width: $bp-mobile) {

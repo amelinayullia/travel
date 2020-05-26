@@ -80,6 +80,7 @@
     &__item {
       margin-right: 15px;
       margin-left: 15px;
+      margin-bottom: -8px;
 
       &:nth-of-type(4n) {
         margin-left: 15px;
@@ -99,8 +100,12 @@
       }
     }
 
+    &__image {
+      margin-top: -17px;
+    }  
+
     &__link {
-      top: 425px;
+      top: 410px;
     }
 
     &__image {
