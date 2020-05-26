@@ -36,7 +36,7 @@
 
     &__offer {
       max-width: 100%;
-    }  
+    }
   }
 
   @media (max-width: $bp-mobile) {
@@ -45,5 +45,10 @@
     padding-bottom: 0;
     margin-bottom: 25px;
     justify-content: center;
+
+    &__next-travel {
+      min-width: 300px;
+      padding: 0;
+    }
   }
 }
