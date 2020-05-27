@@ -16,17 +16,26 @@
     padding-right: 10px;
   }
 
-  &__item {
-    margin-bottom: 10px;
+  &__item-wrapper {
     min-width: 95px;
     font-size: 14px;
     color: rgba(20, 21, 23, 0.5);
   }
 
+  &__item-inner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
   &__link {
     cursor: pointer;
   }
-  
+
   @media (max-width: $bp-tablet) {
     &__title {
       padding-left: 4px;
@@ -54,7 +63,7 @@
       text-align: center;
     }
 
-    &__list-inner {
+    &__item-inner {
       flex-grow: 1;
       margin-right: 10px;
       margin-bottom: 6px;
