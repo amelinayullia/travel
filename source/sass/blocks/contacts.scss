@@ -23,7 +23,6 @@
   &__link {
     color: #fe7865;
     margin-bottom: 10px;
-    padding-left: 40px;
     display: flex;
     align-items: center;
     min-height: 30px;
@@ -31,6 +30,7 @@
     &--mail {
       font-size: 14px;
       position: relative;
+      padding-left: 40px;
 
       &::before {
         content: "";
@@ -43,21 +43,11 @@
         height: 20px;
       }
     }
+  }
 
-    &--phone {
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../../img/phone.svg");
-        background-repeat: no-repeat;
-        top: 0;
-        left: 0;
-        width: 30px;
-        height: 30px;
-      }
-    }
+  &__link-icon {
+    margin-right: 20px;
+    color: #D7D9DF;
   }
 
   @media (max-width: $bp-tablet) {
@@ -79,14 +69,6 @@
 
     &__title {
       padding-right: 10px;
-    }
-
-    &__link {
-
-      &--phone {
-        padding-right: 10px;
-        margin-bottom: 17px;
-      }
     }
   }
 }
