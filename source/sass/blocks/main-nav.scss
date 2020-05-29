@@ -25,7 +25,7 @@
     width: 30px;
     height: 30px;
     fill: none;
-    color:#fe8978;
+    color: #fe8978;
     margin-right: 20px;
   }
 
@@ -94,11 +94,10 @@
       display: none;
     }
 
-
     &--opened {
       position: absolute;
       width: 100vw;
-      height: 100vh;
+      height: 470px;
       z-index: 1;
       background-color: #ffffff;
     }
@@ -123,9 +122,8 @@
     &__inner-link {
       display: flex;
       flex-direction: column;
-      padding-top: 134px;
-      min-height: 570px;
-      min-width: 100vw;    }
+      min-width: 100vw;
+    }
 
     &__link {
       margin: 0;
@@ -156,6 +154,10 @@
 
     &__toggle {
       right: 10px;
+    }
+
+    &--opened {
+      height: 570px;
     }
 
     &--opened::before,
