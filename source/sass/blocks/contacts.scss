@@ -45,9 +45,12 @@
     }
   }
 
-  &__link-icon {
-    margin-right: 20px;
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: none;
     color: #D7D9DF;
+    margin-right: 20px;
   }
 
   @media (max-width: $bp-tablet) {

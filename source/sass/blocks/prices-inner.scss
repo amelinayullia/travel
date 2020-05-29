@@ -49,9 +49,11 @@
   }
 
   &__icon {
-    color:#fe8978;
-    max-height: 30px;
+    width: 30px;
+    height: 30px;
+    fill: none;
     margin-right: 20px;
+    color:#fe8978;
   }
 
   @media (max-width: $bp-tablet) {
