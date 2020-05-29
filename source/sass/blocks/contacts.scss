@@ -18,6 +18,10 @@
 
   &__link-text {
     border-bottom: 1px solid #fe8978;
+
+    &:hover {
+      color: #141517;
+    }
   }
 
   &__link {

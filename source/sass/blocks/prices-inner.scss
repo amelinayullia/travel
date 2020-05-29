@@ -46,6 +46,10 @@
     color: #000000;
     display: flex;
     align-items: center;
+
+    &:hover {
+      color: #fe8978;
+    }
   }
 
   &__icon {
