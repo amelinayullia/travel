@@ -7,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/photo-main-page.jpg");
+    background-image: url("../img/photo-main-page.jpg");
     background-repeat: no-repeat;
     background-color: #7e99c2;
     background-size: cover;
@@ -69,7 +69,7 @@
     min-height: 344px;
 
     &::before {
-      background-image: url("../../img/photo-main-tablet.jpg");
+      background-image: url("../img/photo-main-tablet.jpg");
     }
 
     &__title {
@@ -116,7 +116,7 @@
     min-height: 435px;
 
     &::before {
-      background-image: url("../../img/photo-main-mobile.jpg");
+      background-image: url("../img/photo-main-mobile.jpg");
       height: 235px;
     }
 

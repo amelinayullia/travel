@@ -10,7 +10,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/photo-sunset.jpg");
+    background-image: url("../img/photo-sunset.jpg");
     background-repeat: no-repeat;
     background-color: #fe7865;
     width: 845px;
@@ -31,7 +31,7 @@
     justify-content: center;
 
     &::before {
-      background-image: url("../../img/photo-sunset-tablet.jpg");
+      background-image: url("../img/photo-sunset-tablet.jpg");
       width: 768px;
       left: 0;
     }
