@@ -47,10 +47,8 @@
   }
 
   &__features {
-    margin: 0;
-    padding: 0;
+    @include list-reset;
     margin-top: 30px;
-    list-style: none;
   }
 
   @media (max-width: $bp-tablet) {

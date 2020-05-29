@@ -5,9 +5,7 @@
   justify-content: space-around;
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list-reset;
     display: flex;
   }
 

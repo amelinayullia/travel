@@ -1,9 +1,7 @@
 .countries {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   position: relative;
+  @include list-reset;
 
   &::before {
     content: "";
