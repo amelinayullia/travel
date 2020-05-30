@@ -31,7 +31,6 @@
 
   &__phone-text,
   &__link {
-
     &:hover {
       color: #fe8978;
     }
@@ -106,17 +105,23 @@
       background-color: #ffffff;
     }
 
+    &--nojs {
+      background: none;
+    }
+
     &--nojs .main-nav__toggle {
       display: none;
     }
 
     &--nojs .main-nav__wrapper {
-      position: static;
-      min-height: 0;
+      display: flex;
+      height: 570px;
+      background-color: #ffffff;
+      align-items: center;
     }
 
-    &--nojs .main-nav__link {
-      display: block;
+    &--nojs .main-nav__inner-link {
+      display: flex;
     }
 
     &__phone {
