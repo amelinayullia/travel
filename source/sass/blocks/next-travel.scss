@@ -29,6 +29,15 @@
 
   &__link {
     cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      color: #fe7865;
+    }
+
+    &:active {
+      color: #db2810;
+    }
   }
 
   @media (max-width: $bp-tablet) {

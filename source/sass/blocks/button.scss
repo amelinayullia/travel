@@ -17,4 +17,8 @@
     &:hover {
       background-color: #f17d4b;
     }
+
+    &:active {
+      background-image: linear-gradient(to bottom right, #db2810, #eca39a); 
+    }
   }

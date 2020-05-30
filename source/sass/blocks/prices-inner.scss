@@ -50,6 +50,10 @@
     &:hover {
       color: #fe8978;
     }
+
+    &:active {
+      color: #db2810;
+    }
   }
 
   &__icon {
@@ -58,6 +62,10 @@
     fill: none;
     margin-right: 20px;
     color:#fe8978;
+
+    &:active {
+      color: #db2810;
+    }
   }
 
   @media (max-width: $bp-tablet) {

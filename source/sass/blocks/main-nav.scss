@@ -23,6 +23,10 @@
     fill: none;
     color: #fe8978;
     margin-right: 20px;
+
+    &:active {
+      color: #db2810;
+    }
   }
 
   &__phone-text {
@@ -33,6 +37,10 @@
   &__link {
     &:hover {
       color: #fe8978;
+    }
+
+    &:active {
+      color: #db2810;
     }
   }
 
